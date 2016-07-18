@@ -9,4 +9,5 @@ namespace Dhii\Data;
  */
 class Object implements Object\ReadInterface, Object\WriteInterface
 {
+    use Object\ReadTrait;
 }
