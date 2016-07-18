@@ -77,12 +77,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/data-object-trait-read.git",
-                "reference": "cf5fe29ec6411f9acb52ae4d367263a21eebb3a8"
+                "reference": "09e7995ca8912c24e320892340039edefbb09c8f"
+            },
+            "require": {
+                "dhii/stringable-interface": "dev-master"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "dhii/php-cs-fixer-config": "dev-master",
+                "dhii/test-base": "dev-master",
+                "friendsofphp/php-cs-fixer": ">=1.11",
+                "phpunit/phpunit": "^5.4"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Dhii\\DataObject\\": "src/"
+                    "Dhii\\Data\\": "src/"
                 }
             },
             "license": [
@@ -95,7 +105,7 @@
                 }
             ],
             "description": "The read traits of Data Object",
-            "time": "2016-07-10 08:44:56"
+            "time": "2016-07-18 22:23:56"
         },
         {
             "name": "dhii/data-object-trait-write",
