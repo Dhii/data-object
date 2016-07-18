@@ -10,8 +10,59 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "dhii/data-object-interface-read": "dev-master",
+        "dhii/data-object-interface-write": "dev-master",
+        "dhii/data-object-trait-read": "dev-master",
+        "dhii/data-object-trait-write": "dev-master"
+    },
     "require-dev": {
-        "phpunit/phpunit": "~5.4"
-    }
+        "phpunit/phpunit": "^5.4",
+	"dhii/test-base": "dev-master",
+        "dhii/php-cs-fixer-config": "dev-master",
+        "codeclimate/php-test-reporter": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dhii\\Data\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "url": "https://github.com/Dhii/data-object-interface-read.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/Dhii/data-object-interface-write.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/Dhii/data-object-trait-read.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/Dhii/data-object-trait-write.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/Dhii/test-base.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/Dhii/test-base-interface.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/Dhii/test-common.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/Dhii/php-cs-fixer-config.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/Dhii/stringable-interface.git",
+            "type": "git"
+        }
+    ]
 }
